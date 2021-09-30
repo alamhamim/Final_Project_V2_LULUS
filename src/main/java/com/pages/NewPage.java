@@ -12,8 +12,8 @@ import java.util.Properties;
 
 public class NewPage extends LoadableComponent<NewPage> {
 
-    public WebDriver driver;
-    public Properties properties;
+    private WebDriver driver;
+    private Properties properties;
 
     public NewPage(WebDriver driver) {
         this.driver = driver;

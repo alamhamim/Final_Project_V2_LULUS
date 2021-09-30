@@ -1,6 +1,8 @@
 package com.pages;
 
+import com.logger.GetLogger;
 import com.util.SeleniumHelper;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,8 +15,9 @@ import java.util.Properties;
 
 public class DressesPage extends LoadableComponent<DressesPage> {
 
-    public WebDriver driver;
-    Properties properties;
+    Logger logger = GetLogger.logger(DressesPage.class);
+    private WebDriver driver;
+    private Properties properties;
 
     public DressesPage(WebDriver driver) {
         this.driver = driver;
@@ -22,7 +25,7 @@ public class DressesPage extends LoadableComponent<DressesPage> {
         try {
             properties = SeleniumHelper.readProperties("src/main/resources/Page_Data/dressesPageData.properties");
         } catch (IOException e) {
-            System.out.println("Properties file not found for the DressesPage");
+            logger.debug("Properties file not found for the DressesPage");
         }
     }
 

@@ -57,4 +57,17 @@ public class SeleniumHelper {
         File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
         Files.copy(SrcFile, new File("ScreenShots/pic_" + getDateAndTime() + ".png"));
     }
+
+    public static void type(WebElement element, String givenText) {
+        element.sendKeys(givenText);
+    }
+
+    //used in the homepage
+    public static void verifyTheRightProduct(WebElement element, String givenText) {
+        if (!element.getText().equals(givenText)) {
+            System.out.println("Can not verify the element");
+        } else {
+            System.out.println("Element is verified");
+        }
+    }
 }
