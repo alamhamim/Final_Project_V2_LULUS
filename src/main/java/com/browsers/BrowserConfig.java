@@ -11,7 +11,7 @@ public class BrowserConfig {
 
     public static WebDriver startAPP(WebDriver driver, String browserName, String url) {
         if (browserName.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "C:\\Users\\Hamim\\Desktop\\driver\\chromedriver.exe");
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("firefox")) {
             System.setProperty("webdriver.gecko.driver", "Drivers/geckodriver");

@@ -1,2 +1,2 @@
-com/tests/AllTest.class
-com/tests/BaseTest.class
+com\tests\BaseTest.class
+com\tests\AllTest.class

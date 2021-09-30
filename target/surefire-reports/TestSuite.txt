@@ -1,10 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 1.009 sec <<< FAILURE!
-browserSetup(com.tests.AllTest)  Time elapsed: 0.762 sec  <<< FAILURE!
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 0.386 sec <<< FAILURE!
+browserSetup(com.tests.AllTest)  Time elapsed: 0.318 sec  <<< FAILURE!
 org.testng.TestNGException: 
 Parameter 'browserName' is required by BeforeMethod on method browserSetup but has not been marked @Optional or defined
+
 	at org.testng.internal.Parameters.createParams(Parameters.java:270)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:700)

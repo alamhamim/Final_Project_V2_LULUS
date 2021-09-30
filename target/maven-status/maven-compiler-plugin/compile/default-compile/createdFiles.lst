@@ -1,5 +1,5 @@
-com/pages/NewPage.class
-com/pages/HomePage.class
-com/pages/DressesPage.class
-com/util/Helper.class
-com/browsers/BrowserConfig.class
+com\pages\HomePage.class
+com\pages\NewPage.class
+com\pages\DressesPage.class
+com\util\Helper.class
+com\browsers\BrowserConfig.class

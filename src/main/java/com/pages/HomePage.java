@@ -1,13 +1,13 @@
 package com.pages;
 
-import com.util.Helper;
+import com.util.SeleniumHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
-    WebDriver driver;
+  public  WebDriver driver;
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
@@ -22,12 +22,12 @@ public class HomePage {
     WebElement headerDresses;
 
     public NewPage click_on_new() {
-        Helper.click(headerNew);
+        SeleniumHelper.click(headerNew);
         return new NewPage(driver);
     }
 
     public DressesPage click_on_dresses() {
-        Helper.click(headerDresses);
+        SeleniumHelper.click(headerDresses);
         return new DressesPage(driver);
     }
 

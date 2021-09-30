@@ -1,6 +1,6 @@
 package com.pages;
 
-import com.util.Helper;
+import com.util.SeleniumHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,7 +20,7 @@ public class DressesPage extends LoadableComponent<DressesPage> {
         this.driver = driver;
         PageFactory.initElements(driver, this);
         try {
-            properties = Helper.readProperties("src/main/resources/Page_Data/dressesPageData.properties");
+            properties = SeleniumHelper.readProperties("src/main/resources/Page_Data/dressesPageData.properties");
         } catch (IOException e) {
             System.out.println("Properties file not found for the DressesPage");
         }
@@ -34,8 +34,8 @@ public class DressesPage extends LoadableComponent<DressesPage> {
     WebElement getColor;
 
     public void verifyTheRed(String givenColor) {
-        Helper.click(clickRed);
-        Helper.verifyTheProductColor(getColor, givenColor);
+        SeleniumHelper.click(clickRed);
+        SeleniumHelper.verifyTheProductColor(getColor, givenColor);
     }
 
     @Override

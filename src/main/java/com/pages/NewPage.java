@@ -1,6 +1,6 @@
 package com.pages;
 
-import com.util.Helper;
+import com.util.SeleniumHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,14 +12,14 @@ import java.util.Properties;
 
 public class NewPage extends LoadableComponent<NewPage> {
 
-    WebDriver driver;
-    Properties properties;
+    public WebDriver driver;
+    public Properties properties;
 
     public NewPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
         try {
-            properties = Helper.readProperties("src/main/resources/Page_Data/newPageData.properties");
+            properties = SeleniumHelper.readProperties("src/main/resources/Page_Data/newPageData.properties");
         } catch (IOException e) {
             System.out.println("newPageData file not found");
         }
@@ -35,9 +35,10 @@ public class NewPage extends LoadableComponent<NewPage> {
     WebElement total_product;
 
     public void bottom_xs_verify(int givenNumber) {
-        Helper.click(dresses);
-        Helper.click(size_xs);
-        Helper.verifyTotalNumberOfProduct(total_product, givenNumber);
+        SeleniumHelper.click(dresses);
+        SeleniumHelper.click(size_xs);
+        SeleniumHelper.verifyTotalNumberOfProduct(total_product, givenNumber);
+
     }
 
     @Override

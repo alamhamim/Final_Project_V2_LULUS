@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-29T01:06:26 EDT" name="Command line suite" finished-at="2021-09-29T01:06:26 EDT" duration-ms="364">
+  <suite started-at="2021-09-30T00:18:16 EDT" name="Command line suite" finished-at="2021-09-30T00:18:16 EDT" duration-ms="156">
     <groups>
     </groups>
-    <test started-at="2021-09-29T01:06:26 EDT" name="Command line test" finished-at="2021-09-29T01:06:26 EDT" duration-ms="364">
+    <test started-at="2021-09-30T00:18:16 EDT" name="Command line test" finished-at="2021-09-30T00:18:16 EDT" duration-ms="156">
       <class name="com.tests.AllTest">
-        <test-method is-config="true" signature="testSetup()[pri:0, instance:com.tests.AllTest@289d1c02]" started-at="2021-09-29T01:06:26 EDT" name="testSetup" finished-at="2021-09-29T01:06:26 EDT" duration-ms="328" status="PASS">
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:com.tests.AllTest@4e4aea35]" started-at="2021-09-30T00:18:16 EDT" name="testSetup" finished-at="2021-09-30T00:18:16 EDT" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method is-config="true" signature="browserSetup(java.lang.String,java.lang.String)[pri:0, instance:com.tests.AllTest@289d1c02]" started-at="2021-09-29T01:06:26 EDT" name="browserSetup" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1632891986883" status="FAIL">
+        <test-method is-config="true" signature="browserSetup(java.lang.String,java.lang.String)[pri:0, instance:com.tests.AllTest@4e4aea35]" started-at="2021-09-30T00:18:16 EDT" name="browserSetup" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1632975496844" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -67,7 +67,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="dressesTest()[pri:0, instance:com.tests.AllTest@289d1c02]" started-at="2021-09-29T01:06:26 EDT" name="dressesTest" finished-at="2021-09-29T01:06:26 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="dressesTest()[pri:0, instance:com.tests.AllTest@4e4aea35]" started-at="2021-09-30T00:18:16 EDT" name="dressesTest" finished-at="2021-09-30T00:18:16 EDT" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -123,15 +123,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dressesTest -->
-        <test-method is-config="true" signature="testResult(org.testng.ITestResult)[pri:0, instance:com.tests.AllTest@289d1c02]" started-at="2021-09-29T01:06:26 EDT" name="testResult" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1632891986889" status="SKIP">
+        <test-method is-config="true" signature="testResult(org.testng.ITestResult)[pri:0, instance:com.tests.AllTest@4e4aea35]" started-at="2021-09-30T00:18:16 EDT" name="testResult" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1632975496847" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResult -->
-        <test-method is-config="true" signature="browserSetup(java.lang.String,java.lang.String)[pri:0, instance:com.tests.AllTest@289d1c02]" started-at="2021-09-29T01:06:26 EDT" name="browserSetup" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1632891986890" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserSetup -->
-        <test-method signature="newPageTest()[pri:0, instance:com.tests.AllTest@289d1c02]" started-at="2021-09-29T01:06:26 EDT" name="newPageTest" finished-at="2021-09-29T01:06:26 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="newPageTest()[pri:0, instance:com.tests.AllTest@4e4aea35]" started-at="2021-09-30T00:18:16 EDT" name="newPageTest" finished-at="2021-09-30T00:18:16 EDT" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -187,10 +183,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newPageTest -->
-        <test-method is-config="true" signature="testResult(org.testng.ITestResult)[pri:0, instance:com.tests.AllTest@289d1c02]" started-at="2021-09-29T01:06:26 EDT" name="testResult" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1632891986890" status="SKIP">
+        <test-method is-config="true" signature="testResult(org.testng.ITestResult)[pri:0, instance:com.tests.AllTest@4e4aea35]" started-at="2021-09-30T00:18:16 EDT" name="testResult" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1632975496847" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResult -->
+        <test-method is-config="true" signature="browserSetup(java.lang.String,java.lang.String)[pri:0, instance:com.tests.AllTest@4e4aea35]" started-at="2021-09-30T00:18:16 EDT" name="browserSetup" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1632975496847" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
       </class> <!-- com.tests.AllTest -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->

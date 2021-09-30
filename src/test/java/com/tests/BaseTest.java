@@ -7,7 +7,7 @@ import com.browsers.BrowserConfig;
 import com.pages.DressesPage;
 import com.pages.HomePage;
 import com.pages.NewPage;
-import com.util.Helper;
+import com.util.SeleniumHelper;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -26,7 +26,7 @@ public class BaseTest {
     @BeforeClass
     public void testSetup() {
         extent = new ExtentReports();
-        ExtentSparkReporter spark = new ExtentSparkReporter("TestReports/test_report_" + Helper.getDateAndTime() + ".html");
+        ExtentSparkReporter spark = new ExtentSparkReporter("TestReports/test_report_" + SeleniumHelper.getDateAndTime() + ".html");
         extent.attachReporter(spark);
         test = extent.createTest("LULUS test");
 
@@ -45,7 +45,7 @@ public class BaseTest {
 
         } else {
             test.fail(result.getMethod().getMethodName()+" is failed!");
-            Helper.takeScreenShot(driver);
+            SeleniumHelper.takeScreenShot(driver);
         }
         extent.flush();
 
