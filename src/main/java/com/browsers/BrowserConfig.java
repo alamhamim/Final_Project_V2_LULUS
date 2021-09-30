@@ -1,5 +1,7 @@
 package com.browsers;
 
+import com.logger.GetLogger;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -9,10 +11,13 @@ import org.openqa.selenium.safari.SafariDriver;
 
 public class BrowserConfig {
 
+    static Logger logger = GetLogger.logger(BrowserConfig.class);
+
     public static WebDriver startAPP(WebDriver driver, String browserName, String url) {
         if (browserName.equalsIgnoreCase("chrome")) {
             System.setProperty("webdriver.chrome.driver", "C:\\Users\\Hamim\\Desktop\\driver\\chromedriver.exe");
             driver = new ChromeDriver();
+            logger.debug(browserName+" Opened");
         } else if (browserName.equalsIgnoreCase("firefox")) {
             System.setProperty("webdriver.gecko.driver", "Drivers/geckodriver");
             driver = new FirefoxDriver();
@@ -40,5 +45,6 @@ public class BrowserConfig {
 
     public static void closeAPP(WebDriver driver) {
         driver.quit();
+        logger.debug("Test is Done");
     }
 }
